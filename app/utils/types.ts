@@ -80,3 +80,11 @@ export interface CalculatorFormData {
     height: number
   }
 }
+
+
+// Info Card
+export interface InfoCard {
+  title: string;
+  text: string;
+  icon: string;
+}

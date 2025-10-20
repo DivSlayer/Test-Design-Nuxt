@@ -7,4 +7,7 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'Travelet | ترولوت'
+})
 </script>
