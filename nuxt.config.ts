@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     },
     compatibilityDate: "2025-07-15",
     devtools: {enabled: true},
-    css: ["~/assets/scss/main.scss",'~/assets/css/dana.css'],
+    css: ["~/assets/scss/main.scss", '~/assets/css/dana.css'],
     vite: {
         css: {
             preprocessorOptions: {
@@ -29,6 +29,27 @@ export default defineNuxtConfig({
                     as: "font",
                     href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
                 },
+                {
+                    rel: 'preload',
+                    href: '/fonts/Dana/Regular.ttf',
+                    as: 'font',
+                    type: 'font/ttf',
+                    crossorigin: ''
+                },
+                {
+                    rel: 'preload',
+                    href: '/fonts/Dana/SemiBold.ttf',
+                    as: 'font',
+                    type: 'font/ttf',
+                    crossorigin: ''
+                },
+                {
+                    rel: 'preload',
+                    href: '/fonts/Dana/Bold.ttf',
+                    as: 'font',
+                    type: 'font/ttf',
+                    crossorigin: ''
+                }
             ],
         },
     },
