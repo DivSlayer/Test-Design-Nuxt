@@ -1,0 +1,49 @@
+@use "./variables" as *;
+
+.features {
+  padding: 56px 0;
+  background: #fff;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    text-align: center;
+  }
+
+  .feature-item {
+    .icon {
+      width: 64px;
+      height: 64px;
+      display: inline-grid;
+      place-items: center;
+      margin-bottom: 12px;
+      font-size: 24px;
+      img{
+        height: 58px;
+      }
+    }
+
+    h4 {
+      margin: 8px 0;
+    }
+
+    p {
+      color: $muted;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+}
+
+
+@media screen and (max-width: 990px){
+  .features{
+    .feature-item{
+      p{
+        max-width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

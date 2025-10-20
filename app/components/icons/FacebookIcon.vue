@@ -1,0 +1,26 @@
+<script setup lang="ts">
+
+</script>
+
+<template>
+  <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1_252)">
+      <g clip-path="url(#clip1_1_252)">
+        <path d="M8.72313 9L9.1675 6.10437H6.38907V4.22531C6.38907 3.43313 6.77719 2.66094 8.02157 2.66094H9.28469V0.195625C9.28469 0.195625 8.13844 0 7.0425 0C4.75438 0 3.25875 1.38688 3.25875 3.8975V6.10437H0.715317V9H3.25875V16H6.38907V9H8.72313Z" fill="currentColor"/>
+      </g>
+    </g>
+    <defs>
+      <clipPath id="clip0_1_252">
+        <rect width="10" height="16" fill="currentColor"/>
+      </clipPath>
+      <clipPath id="clip1_1_252">
+        <path d="M0 0H10V16H0V0Z" fill="currentColor"/>
+      </clipPath>
+    </defs>
+  </svg>
+
+</template>
+
+<style scoped>
+
+</style>

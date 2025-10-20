@@ -1,0 +1,82 @@
+// Navigation Types
+export interface NavItem {
+  title: string
+  link: string
+}
+
+// Feature Types
+export interface Feature {
+  title: string
+  text: string
+  icon: string
+}
+
+// Calculator Types
+export interface Tab {
+  id: number
+  title: string
+  description: string
+  icon: any
+}
+
+export interface SizeOption {
+  id: string
+  name: string
+  dimensions: string
+  weight: string
+}
+
+export interface Country {
+  id: string
+  name: string
+  code: string
+}
+
+// Social Media Types
+export interface SocialLink {
+  id: string
+  link: string
+  icon: any
+}
+
+// Footer Types
+export interface MainLink {
+  href: string
+  title: string
+}
+
+export interface BatchLinks {
+  title: string
+  links: MainLink[]
+}
+
+// Form Types
+export interface FormField {
+  name: string
+  label: string
+  type: 'text' | 'email' | 'select' | 'textarea'
+  required?: boolean
+  options?: string[]
+}
+
+// API Response Types
+export interface ApiResponse<T> {
+  success: boolean
+  data?: T
+  error?: string
+  message?: string
+}
+
+// Calculator Form Data
+export interface CalculatorFormData {
+  type: 'document' | 'package'
+  size: string
+  departureCountry: string
+  destinationCountry: string
+  weight?: number
+  dimensions?: {
+    length: number
+    width: number
+    height: number
+  }
+}

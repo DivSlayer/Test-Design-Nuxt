@@ -1,0 +1,129 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+/* Navbar */
+@use "navbar";
+
+/* Hero */
+@use "hero";
+
+/* Features 3-col */
+@use "features";
+
+/* Offers 3-col */
+@use "moreInfo";
+
+/* Calculator */
+@use "_calculator";
+
+/* CTA */
+@use "_CTA";
+
+/* Footer area */
+@use '_footer';
+
+/* reset / base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+html, body, #app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: $dark-text;
+  background: $bg;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+
+  font-family: "Inter", sans-serif;
+}
+
+/* container */
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+/* responsive */
+@media (max-width: 990px) {
+  .container{
+    padding: 0 2rem;
+  }
+  .features .grid {
+    grid-template-columns: 1fr;
+  }
+  .split .row, .cta {
+    grid-template-columns: 1fr;
+  }
+  .split .row {
+    grid-template-columns: 1fr;
+  }
+  .split .img-wrap {
+    order: -1;
+  }
+  /* image first on small screens */
+  .hero {
+    min-height: 380px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+  .calc-row .select {
+    flex-basis: 100%;
+  }
+}
+
+select {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+
+  option {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+}
+
+h1 {
+  @include px-to-rem(font-size, 72);
+  font-weight: 700;
+}
+h2 {
+  @include px-to-rem(font-size, 36);
+  font-weight: 700;
+}
+
+h3 {
+  @include px-to-rem(font-size, 30);
+  font-weight: 700;
+}
+
+h4 {
+  @include px-to-rem(font-size, 20);
+  font-weight: 700;
+}
+
+h5 {
+  @include px-to-rem(font-size, 18);
+  font-weight: 700;
+}
+
+h6 {
+  @include px-to-rem(font-size, 16);
+  font-weight: 700;
+}
