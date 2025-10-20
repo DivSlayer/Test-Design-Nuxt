@@ -8,6 +8,6 @@
 
 <script setup>
 useHead({
-  title: 'Travelet | ترولوت'
+  title: 'Travelot | ترولوت'
 })
 </script>
