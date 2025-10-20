@@ -12,7 +12,7 @@ const props = defineProps<Props>();
 const hoverShadowColor = 'rgba(34, 112, 99, 0.3)';
 const shadowBlur = "12px";
 
-const defaultShadow = '0 6px 25px rgba(0, 0, 0, 0.1)';
+const defaultShadow = '0 4px 20px rgba(0, 0, 0, 0.05)';
 
 const mouseX = ref(0);
 const mouseY = ref(0);
