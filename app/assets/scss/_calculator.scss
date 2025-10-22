@@ -139,8 +139,6 @@
           width: 100%;
           border-radius: 10px;
           border: 2px solid rgba(11, 23, 32, 0.06);
-          font-family: "Inter", sans-serif;
-          font-weight: 400;
           transition: border-color 0.3s ease;
 
           &:focus {
@@ -159,10 +157,6 @@
             cursor: not-allowed;
           }
 
-          option {
-            font-family: "Inter", sans-serif;
-            font-weight: 400;
-          }
         }
 
       }
